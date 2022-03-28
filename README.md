@@ -1,3 +1,3 @@
 # algorithmicLogic
 
-1. [day1](code1/readme.md)
+1. [day1](code1/README.md)
