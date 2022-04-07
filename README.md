@@ -6,3 +6,4 @@
 4. [day4](code4/README.md)
 5. [day5](code5/README.md)
 6. [day6](code6/README.md)
+7. [day7](code7/README.md)
