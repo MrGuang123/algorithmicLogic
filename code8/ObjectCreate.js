@@ -1,0 +1,1 @@
+// https://bigfrontend.dev/zh/problem/implement-your-own-Object-create

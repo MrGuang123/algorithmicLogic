@@ -7,3 +7,4 @@
 5. [day5](code5/README.md)
 6. [day6](code6/README.md)
 7. [day7](code7/README.md)
+8. [day8](code8/README.md)
