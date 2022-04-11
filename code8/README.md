@@ -1,2 +1,2 @@
-1. [lc-24](lc-24.js)
-2. [ObjectCreate](ObjectCreate.js)
+1. [lc-109](lc-109.js)
+2. [EventEmitter](EventEmitter.js)
