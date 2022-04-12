@@ -11,6 +11,32 @@
 
 <body>
   <div class="drag"></div>
+  <script>
+    const body = document.querySelector('body')
+    const dragDom = document.querySelector('.drag')
+    let startX = 0, startY = 0;
+
+    const handler = function (e) {
+      dragDom.style.left = `${e.clientX - startX}px`;
+      dragDom.style.top = `${e.clientY - startY}px`;
+    }
+
+    dragDom.addEventListener('mousedown', function (e) {
+      console.log('eee', e)
+      startX = e.offsetX
+      startY = e.offsetY
+
+      dragDom.addEventListener('mousemove', handler)
+    })
+
+    dragDom.addEventListener('mouseup', function (e) {
+      startX = e.clientX
+      startY = e.clientY
+
+      dragDom.removeEventListener('mousemove', handler)
+    })
+
+  </script>
 </body>
 
 </html>

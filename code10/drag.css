@@ -1,0 +1,19 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: yellowgreen;
+}
+
+.drag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border: 1px solid green;
+  background: #e92322;
+  cursor: pointer;
+  box-sizing: border-box;
+}
