@@ -1,0 +1,1 @@
+// https://bigfrontend.dev/zh/problem/virtual-dom-v-jsx-2
