@@ -18,26 +18,43 @@
 // Hi This is Hank!
 // Eat supper
 
-function LazyMan(name) {
-  this.name = name
-  this.pipeLine = []
-  this.pipeLine.push('console')
+class LazyManClass {
+  constructor(name) {
+    this.name = name
+    this.pipeLine = []
+    this.pipeLine.push(() => console.log(`Hi! This is ${this.name}!`))
 
-
-  return new LazyMan(name)
-}
-
-LazyMan.prototype = {
-  console: function (msg) {
-    console.log(`Hi! This is ${msg}!`)
-  },
-  sleep: function (time) {
-
-  },
-  sleepFirst: function (time) {
-
-  },
-  eat: function (food) {
-
+    Promise.resolve().then(async () => {
+      while (this.pipeLine.length > 0) {
+        const pipe = this.pipeLine.shift()
+        await pipe()
+      }
+    })
+  }
+  _sleep(time) {
+    return () => new Promise(resolve => {
+      setTimeout(() => {
+        console.log(`Wake up after ${time}`);
+        resolve()
+      }, time * 1000);
+    })
+  }
+  sleep(time) {
+    this.pipeLine.push(this._sleep(time))
+    return this
+  }
+  sleepFirst(time) {
+    this.pipeLine.unshift(this._sleep(time))
+    return this
+  }
+  eat(food) {
+    this.pipeLine.push(() => console.log(`Eat ${food}~`))
+    return this
   }
 }
+function LazyMan(name) {
+  return new LazyManClass(name)
+}
+
+LazyMan('Hank').eat('dinner').eat('supper')
+LazyMan('Hank').eat('dinner').sleepFirst(3)
