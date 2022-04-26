@@ -1,1 +1,0 @@
-// https://bigfrontend.dev/zh/typescript/Trim
