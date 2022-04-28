@@ -21,3 +21,5 @@
 19. [day19](code19/README.md)
 20. [day20](code20/README.md)
 21. [day21](code21/README.md)
+22. [day22](code22/README.md)
+23. [day23](code23/README.md)
