@@ -1,0 +1,1 @@
+// https://bigfrontend.dev/zh/typescript/implement-Partial-T
