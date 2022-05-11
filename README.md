@@ -28,3 +28,5 @@
 26. [day26](code26/README.md)
 27. [day27](code27/README.md)
 28. [day28](code28/README.md)
+29. [day29](code29/README.md)
+30. [day30](code30/README.md)
