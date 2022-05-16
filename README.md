@@ -31,3 +31,5 @@
 29. [day29](code29/README.md)
 30. [day30](code30/README.md)
 31. [day31](code31/README.md)
+32. [day32](code32/README.md)
+33. [day33](code33/README.md)
